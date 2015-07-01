@@ -50,8 +50,13 @@ var badwords =[
 var randomizerButton = document.getElementById("randomizer");
 var textArea = document.getElementById("textArea");
 
-  textArea.innerHTML = "Hola";
-
+  var item = badwords[Math.floor(Math.random()*badwords.length)];
+  textArea.innerHTML = item;
 
 randomizerButton.onclick = function(){
+  
+  var item = badwords[Math.floor(Math.random()*badwords.length)];
+  textArea.innerHTML = item;
+
+
 }
